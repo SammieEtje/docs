@@ -15,7 +15,7 @@ Start Argos Notary with the following command:
 
 ```bash
 docker run -ti -p 80:80 -p 8080:8080 -p 8087:8087 \
-       --name argosnotary argosnotary/argosnotary:0.0
+       --name argosnotary argosnotary/argosnotary:1.0.3
 ```
 
 If you want to persist the mongodb data at first docker volumes should be created.
@@ -29,7 +29,7 @@ or with volumes
 ```bash
 docker run -ti -p 80:80 -p 8080:8080 -p 8087:8087 \
        -v data_db:/data/db -v data_configdb:/data/configdb \
-       --name argosnotary argosnotary/argosnotary:0.0
+       --name argosnotary argosnotary/argosnotary:1.0.3
 ```
 
 Argos Notary will be available <a href="http://localhost" target="_blank">here</a>
@@ -77,13 +77,12 @@ kubectl get po -A
 
 Add the argosnotary Helm repository
 ```bash
-helm repo add argosnotary https://argosnotary.github.io/charts
+helm repo add argosnotary https://charts.argosnotary.com
 helm repo update
 ```
 Install Argos Notary
 ```bash
-helm install argos argosnotary/argosnotary \
-      --set global.oauthstub.enabled=true,dbhost_and_port=argos-mongodb
+helm install argos argosnotary/argosnotary
 ```
 
 Go to the Argos Dashboard with this <a href="https://argosnotary.local" target="_blank">link</a>

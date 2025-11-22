@@ -15,7 +15,7 @@
  */
 module.exports = {
   title: 'Argos Notary',
-  url: 'https://argosnotary.github.io',
+  url: 'https://www.argosnotary.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'argosnotary',
@@ -31,8 +31,8 @@ module.exports = {
         {
           to: 'docs/00_overview/10_overview',
           activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          label: 'Documents',
+          position: 'right',
         },
         {
           href: 'https://github.com/argosnotary',
@@ -48,7 +48,7 @@ module.exports = {
           title: 'Contact',
           items: [
             {
-              label: 'e-mail',
+              label: 'support',
               href: 'mailto:support@argosnotary.com',
             },
           ],

@@ -17,17 +17,25 @@ module.exports = {
   docs: 
   {
     Overview: ['00_overview/10_overview'],
-    'Getting started': ['10_get_started/10_get_started', '10_get_started/20_examples'],
+    'Getting started': [ 
+        '10_get_started/10_get_started', 
+        '10_get_started/20_examples'],
+    'User Manual': ['15_user_manual/10_user_profile', 
+        '15_user_manual/15_permissions', 
+        '15_user_manual/20_service_account', 
+        '15_user_manual/25_layout', 
+        '15_user_manual/30_approval',
+        '15_user_manual/35_release'],
     Architecture: [
     	'20_architecture/10_architecture', 
     	{ 
     		type: 'category',
     		label: 'Architectural Decisions',
-    		items: [ '20_architecture/20_decisions/10_intro', '20_architecture/20_decisions/99_template']
+    		items: [ '20_architecture/20_decisions/10_intro']
     	},
     ],
-    Installation: ['30_installation/10_installation', '30_installation/20_upgrade'],
-    'System administration': ['40_administration/10_maintenance', '40_administration/20_recover'],
+    Installation: ['30_installation/10_installation'],
+    'System administration': ['40_administration/10_recover'],
     Security: ['50_security/10_authentication', '50_security/20_authorization'],
     'Supply Chain management': ['60_supplychain_management/10_wip'],
     Approvals: ["63_approvals/10_approval_collector",
